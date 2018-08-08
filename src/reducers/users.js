@@ -1,8 +1,6 @@
 import * as t from '../ActionTypes'
 
-const initialState = {
-
-}
+const initialState = [];
 
 const users = (state = initialState, action) => {
     switch (action.type) {
