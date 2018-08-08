@@ -18,11 +18,12 @@ export const addUser = name => ({
     date: Date()
 })
 
-export const messageReceived = (message, author) => ({
+export const messageReceived = (message, author, date) => ({
     type: t.MESSAGE_RECEIVED,
     id: nextMessageId++,
     message,
-    author
+    author,
+    date
 })
 
 export const populateUsersList = users => ({
